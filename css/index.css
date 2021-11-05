@@ -1,0 +1,265 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Noto Serif', serif;
+}
+
+nav{
+    display: grid;
+    background: linear-gradient(#7ffff9, #00fda5);
+    height: auto;
+    width: 100%;
+    top: 0;
+}
+
+label.logo{
+    margin: auto;
+}
+
+label.logo img{ /* mudar */
+    height: 200px;
+    margin: 15px;
+    border-radius: 15px;
+}
+
+label i{
+    font-size: 0;
+}
+
+nav ul.ul{
+    text-align: center;
+}
+
+nav ul.opener{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#7ffff9, #00fda5);
+    top: 140px;
+    right: 0; /*0 para aparecer*/
+    margin-right: 0;
+}
+
+nav .bar-opener i{
+    display: none;
+}
+
+nav ul li{
+    display: inline-block; /* ajusta pra inline */
+}
+
+nav ul li a{
+    color: rgba(0, 72, 44, 0.6);
+    line-height: 100px;
+    font-size: 18px;
+    padding: 5px;
+    text-transform: uppercase;
+    margin-inline: 50px;
+}
+
+nav ul li a i{
+    color: rgb(0, 58, 31);
+    font-size: 18px;
+}
+
+nav ul li:hover{
+    background: white;
+    background: linear-gradient(#00fda423, #ffffff);
+    transition: 0.3s;
+    padding-inline: 2px;
+}
+
+@media (max-width: 1024px){
+
+    label.logo img{
+        height: auto;
+        width: 200px;
+        padding-left: 15px;
+        margin-top: 10px;
+    }
+
+    nav ul.ul{
+        float: right;
+    }
+
+    nav ul li a{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 425px){ /* Mostrar nav-bar em small device */
+
+    nav .bar-opener{
+        display: flex;
+        right: 0;
+    }
+
+    nav .bar-opener i{
+        display: block;
+        font-size: 25px;
+        color: white;
+    }
+
+    section div.card-slide{
+        width: 250px;
+    }
+
+    section div.card-slide .img-card{
+        width: 200px;
+        height: 100px;
+    }
+
+    label.logo img{
+        height: 110px;
+        padding-left: 25px;
+        top: 0;
+    }
+
+    label i{
+        display: inline-block;
+        float: right;
+        cursor: pointer;
+        font-size: 50px;
+        color: #ffffff;
+        margin: 30px 20px;
+    }
+
+    nav ul.ul{
+        display: none;
+    }
+
+    nav ul li{
+        display: block;
+        line-height: 30px;
+        text-align: right;
+        margin: 25px;
+    }
+
+    nav ul li a{
+        font-size: 15px;
+        margin: 0;
+    }
+
+}
+
+.container {
+    height: auto;
+    margin: 10px 200px 10px 200px;
+    padding: 15px;
+}
+
+@media (max-width: 768px){
+    .container{
+        margin: auto;
+    }
+}
+
+  
+footer{
+    background: #111;
+    color: white;
+    height: auto;
+    width: 100%;
+    padding-top: 40px;
+    position: absolute; /* trava o footer em baixo */
+    vertical-align: baseline; /* trava o footer em baixo */
+    z-index: 999;
+    left: 0;
+    right: 0;
+}
+
+footer .footer-content{ 
+    display: flex;
+    width: 700px;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column; /* alinha todos os item como se fossem coluna */
+}
+
+@media (max-width: 425px){
+    footer .footer-content{ 
+        width: 300px;
+    }
+}
+
+footer .footer-content h1{
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 2rem;
+    padding-bottom: 20px;
+}
+
+footer .footer-content p{
+    color: rgba(255, 255, 255, 0.857);
+    font-size: 15px;
+    line-height: 1.5rem;
+    font-weight: lighter;
+}
+
+footer ul{
+    list-style: none;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+}
+
+footer ul li{
+    padding: 30px;
+}
+
+footer ul i{
+    color: white;
+    font-size: 30px;
+    padding: 5px;
+}
+
+footer ul i:hover{
+    color: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
+    border-radius: 100%;
+}
+
+footer .footer-botton{
+    background-color: #000;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+} 
+
+footer .footer-botton{
+    font-size: 14px;
+    word-spacing: 3px;
+    text-transform: capitalize;
+}
+
+footer .footer-botton span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 15px;
+}
+
+section .card-content{
+    text-align: center;
+}
+
+section .card-slide{
+    display: inline-table;
+    background: burlywood;
+    width: 400px;
+    padding: 15px;
+    margin-inline: 20px;
+    margin-bottom: 15px;
+    border-style: groove;
+}
+
+section .card-slide .img-card{
+    width: 400px;
+    height: 250px;
+}
