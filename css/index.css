@@ -160,7 +160,13 @@ nav ul li:hover{
     }
 }
 
-  
+.scrollup{
+    display: none;
+    cursor: pointer;
+    font-size: 70px;
+    margin-left: 80%;
+}
+
 footer{
     background: #111;
     color: white;
