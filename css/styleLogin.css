@@ -1,0 +1,67 @@
+body{
+    font-family: 'Noto Serif', serif;
+}
+
+.container{
+    background: linear-gradient(#00fda5, #81fff990);
+    display: grid;
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    margin-top: 70px;
+    border-radius: 30px;
+    box-shadow: 2px 2px 5px #6666ff;
+}
+
+.img{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: auto;
+}
+
+.conteudo-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.conteudo-login h2{
+    font-size: 20pt;
+    text-align: center;
+ }
+
+.conteudo-login input{
+    line-height: 40px;
+    font-size: 15pt;
+    border: none;
+    font-family: 'Noto Serif', serif;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.login .senha{
+    padding-left: 50px;
+}
+
+i{
+    padding: 5px;
+}
+
+button{
+   background-color: #6666ff;
+   font-family: 'Poppins', sans-serif;
+   font-size: 15pt;
+   margin-top: 20px;
+   padding: 10px 70px;
+   cursor: pointer;
+   border: none;
+   border-radius: 20px;
+   color: whitesmoke;
+ }
+
+button:hover{
+    background-color: #ff9900;
+    color: black;
+ }
